@@ -1,0 +1,40 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: KGNU Show Ratings
+  chapters:
+  - file: show_ratings/all_respondents
+  - file: show_ratings/age_index
+    sections:
+    - file: show_ratings/ages_0_to_18
+    - file: show_ratings/ages_19_to_30
+    - file: show_ratings/ages_31_to_45
+    - file: show_ratings/ages_46_to_65
+    - file: show_ratings/ages_66_plus
+  - file: show_ratings/county_index
+    sections:
+    - file: show_ratings/boulder_county
+    - file: show_ratings/denver_county
+    - file: show_ratings/jefferson_county
+    - file: show_ratings/arapahoe_county
+    - file: show_ratings/adams_county
+    - file: show_ratings/larimer_county
+    - file: show_ratings/weld_county
+    - file: show_ratings/douglas_county
+    - file: show_ratings/broomfield_county
+    - file: show_ratings/other_counties
+  - file: show_ratings/race_index
+    sections:
+    - file: show_ratings/black_african_american
+    - file: show_ratings/hispanic_latino_chicano
+    - file: show_ratings/middle_eastern_arab
+    - file: show_ratings/native_american_alaskan
+    - file: show_ratings/native_hawaiian_pacific_islander
+    - file: show_ratings/prefer_not_to_say
+    - file: show_ratings/prefer_to_self_identify
+    - file: show_ratings/white
+    
+
