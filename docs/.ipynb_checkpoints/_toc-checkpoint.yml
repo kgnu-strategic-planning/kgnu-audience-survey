@@ -36,5 +36,9 @@ parts:
     - file: show_ratings/prefer_not_to_say
     - file: show_ratings/prefer_to_self_identify
     - file: show_ratings/white
-    
+- caption: KGNU Community
+  chapters:
+  - file: community_statistics/kgnu_contributor_statistics
+  - file: community_statistics/kgnu_volunteer_statistics
+  - file: community_statistics/kgnu_listener_only_statistics
 

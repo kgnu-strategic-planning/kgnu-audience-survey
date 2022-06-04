@@ -31,6 +31,7 @@ repository:
 html:
   use_issues_button: false
   use_repository_button: true
+  extra_footer: "2022-06-04 02:42 PM"
   
 launch_buttons:
   binderhub_url: ""
