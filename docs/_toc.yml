@@ -41,4 +41,7 @@ parts:
   - file: community_statistics/kgnu_contributor_statistics
   - file: community_statistics/kgnu_volunteer_statistics
   - file: community_statistics/kgnu_listener_only_statistics
+- caption: Interests and Consumption Preferences
+  chapters:
+  - file:  interests_and_preferences/importance
 

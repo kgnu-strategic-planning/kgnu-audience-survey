@@ -17,7 +17,7 @@ from functions import *
 # In[2]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English') 
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English') 
 
 
 # In[3]:

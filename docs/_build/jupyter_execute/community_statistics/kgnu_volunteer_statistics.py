@@ -16,9 +16,9 @@ from IPython.display import display, Markdown
 # In[2]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
-df_contributors = df[df['Ever_made_a_financial_contribution_to _KGNU?'] == 'Yes']
-df_non_contributors = df[df['Ever_made_a_financial_contribution_to _KGNU?'] == 'No']
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
+df_contributors = df[df['Ever_made_a_financial_contribution_to_KGNU?'] == 'Yes']
+df_non_contributors = df[df['Ever_made_a_financial_contribution_to_KGNU?'] == 'No']
 #print(len(df))
 #print(len(df_contributors))
 #print(len(df_non_contributors))
@@ -29,7 +29,7 @@ df_non_contributors = df[df['Ever_made_a_financial_contribution_to _KGNU?'] == 
 # In[3]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
 df = df[df.Age.notna()]
 df['Age'] = df['Age'].astype('int')
 
@@ -60,7 +60,7 @@ print(f'Volunteers within those Respondents: {len(df_volunteers)}')
 # In[4]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
 df = df[df.County.notna()]
 df_volunteers = df[df['Ever_been_a_KGNU_volunteer?'] == 'Yes - please specify where/when:']
 
@@ -93,7 +93,7 @@ print(f'Volunteers within those Respondents: {len(df_volunteers)}')
 # In[5]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
 df = df[df.You_Are.notna()]
 df_volunteers = df[df['Ever_been_a_KGNU_volunteer?'] == 'Yes - please specify where/when:']
 
@@ -118,7 +118,7 @@ print(f'Volunteers within those Respondents: {len(df_volunteers)}')
 # In[6]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
 df = df[df.Household_Income.notna()]
 df_hhi_1 = df[df['Household_Income'] == 13]
 ##print(len(df))
@@ -128,7 +128,7 @@ df_hhi_1 = df[df['Household_Income'] == 13]
 # In[7]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
 df = df[df.Household_Income.notna()]
 df['Household_Income'] = df['Household_Income'].astype('int')
 
@@ -159,12 +159,12 @@ print(f'Volunteers within those Respondents: {len(df_volunteers)}')
 # In[8]:
 
 
-df = pd.read_excel('KGNU-Member-Data-05.12.22-v1.xlsx', sheet_name='English')
-df = df[df['Ever_made_a_financial_contribution_to _KGNU?'].notna()]
+df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English')
+df = df[df['Ever_made_a_financial_contribution_to_KGNU?'].notna()]
 
 df_volunteers = df[df['Ever_been_a_KGNU_volunteer?'] == 'Yes - please specify where/when:']
 
-contributors = df_volunteers['Ever_made_a_financial_contribution_to _KGNU?']
+contributors = df_volunteers['Ever_made_a_financial_contribution_to_KGNU?']
 
 contributors.value_counts().plot.bar(rot=90)
 plt.title('Volunteers by KGNU Financial Contributor')
