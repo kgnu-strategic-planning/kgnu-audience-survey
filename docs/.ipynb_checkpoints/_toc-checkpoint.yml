@@ -36,6 +36,38 @@ parts:
     - file: show_ratings/prefer_not_to_say
     - file: show_ratings/prefer_to_self_identify
     - file: show_ratings/white
+- caption: KGNU Show Ratings - Random
+  chapters:
+  - file: show_ratings/all_respondents_random
+  - file: show_ratings/age_index_random
+    sections:
+    - file: show_ratings/ages_0_to_18_random
+    - file: show_ratings/ages_19_to_30_random
+    - file: show_ratings/ages_31_to_45_random
+    - file: show_ratings/ages_46_to_65_random
+    - file: show_ratings/ages_66_plus_random
+  - file: show_ratings/county_index_random
+    sections:
+    - file: show_ratings/boulder_county_random
+    - file: show_ratings/denver_county_random
+    - file: show_ratings/jefferson_county_random
+    - file: show_ratings/arapahoe_county_random
+    - file: show_ratings/adams_county_random
+    - file: show_ratings/larimer_county_random
+    - file: show_ratings/weld_county_random
+    - file: show_ratings/douglas_county_random
+    - file: show_ratings/broomfield_county_random
+    - file: show_ratings/other_counties_random
+  - file: show_ratings/race_index_random
+    sections:
+    - file: show_ratings/black_african_american_random
+    - file: show_ratings/hispanic_latino_chicano_random
+    - file: show_ratings/middle_eastern_arab_random
+    - file: show_ratings/native_american_alaskan_random
+    - file: show_ratings/native_hawaiian_pacific_islander_random
+    - file: show_ratings/prefer_not_to_say_random
+    - file: show_ratings/prefer_to_self_identify_random
+    - file: show_ratings/white_random
 - caption: KGNU Community
   chapters:
   - file: community_statistics/kgnu_contributor_statistics
@@ -43,5 +75,8 @@ parts:
   - file: community_statistics/kgnu_listener_only_statistics
 - caption: Interests and Consumption Preferences
   chapters:
+  - file:  interests_and_preferences/importance_rankings
+  - file:  interests_and_preferences/importance_rankings_random
   - file:  interests_and_preferences/importance
+  - file:  interests_and_preferences/importance_random
 

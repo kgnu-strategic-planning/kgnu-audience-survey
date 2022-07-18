@@ -3,8 +3,7 @@
 
 # # Importance Preferences
 # 
-# In this section we look for correlations between what respondents consider 'Important' categories of programming and examine which
-# Media Outlets they use on a regular basis to obtain such programming.
+# In this section we look for correlations between what respondents consider 'Important' categories of programming and examine which Media Outlets they use on a regular basis to obtain such programming.
 
 # In[1]:
 
@@ -20,7 +19,7 @@ from functions import *
 # In[2]:
 
 
-df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English') 
+df = pd.read_excel('KGNU-Member-Data-07.15.22.xlsx', sheet_name='English') 
 
 
 # ## Local News

@@ -17,7 +17,7 @@ from functions import *
 # In[2]:
 
 
-df = pd.read_excel('KGNU-Member-Data-06.14.22.xlsx', sheet_name='English') 
+df = pd.read_excel('KGNU-Member-Data-07.15.22.xlsx', sheet_name='English') 
 
 
 # In[3]:
@@ -35,11 +35,19 @@ filter_col_val = 5
 filter_col_val_display = 'Filter: Ages 65+'
 
 
+# ## Show Rankings
+
+# In[5]:
+
+
+create_ranked_table_of_shows(df, False, filter_col, filter_col_val, filter_col_val_display)
+
+
 # ## Music Shows
 
 # ### A Classic Monday
 
-# In[5]:
+# In[6]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A_Classic_Monday_Ratings')
@@ -47,7 +55,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### African Roots
 
-# In[6]:
+# In[7]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'African_Roots_Ratings')
@@ -55,7 +63,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### Afternoon Sound Alternative
 
-# In[7]:
+# In[8]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'ASA_Ratings')
@@ -63,7 +71,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### Blues Legacy
 
-# In[8]:
+# In[9]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Blues_Legacy_Ratings')
@@ -71,7 +79,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'B
 
 # ### Corriente
 
-# In[9]:
+# In[10]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Corriente_Ratings')
@@ -79,7 +87,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'C
 
 # ### Dub Palace
 
-# In[10]:
+# In[11]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Dub_Palace_Ratings')
@@ -87,7 +95,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'D
 
 # ### Dusty Grooves
 
-# In[11]:
+# In[12]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Dusty_Grooves_Ratings')
@@ -95,7 +103,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'D
 
 # ### Eclipse
 
-# In[12]:
+# In[13]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Eclipse_Ratings')
@@ -103,7 +111,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'E
 
 # ### Electronic Air
 
-# In[13]:
+# In[14]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Electronic_Air_Ratings')
@@ -111,7 +119,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'E
 
 # ### eTown
 
-# In[14]:
+# In[15]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'E_Town_Ratings')
@@ -119,7 +127,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'E
 
 # ### Gospel Chime
 
-# In[15]:
+# In[16]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Gospel_Chime_Ratings')
@@ -127,7 +135,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'G
 
 # ### Grateful Dead
 
-# In[16]:
+# In[17]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Grateful_Dead_Ratings')
@@ -135,7 +143,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'G
 
 # ### Hwy 322
 
-# In[17]:
+# In[18]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'HWY_322_Ratings')
@@ -143,7 +151,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'H
 
 # ### Honky Tonk Heroes
 
-# In[18]:
+# In[19]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'HTH_Ratings')
@@ -151,7 +159,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'H
 
 # ### Jazz Lives
 
-# In[19]:
+# In[20]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Jazz_Lives_Ratings')
@@ -159,7 +167,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'J
 
 # ### Kaberet
 
-# In[20]:
+# In[21]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Kaberet_Ratings')
@@ -167,7 +175,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'K
 
 # ### Morning Sound Alternative
 
-# In[21]:
+# In[22]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'MSA_Ratings')
@@ -175,7 +183,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Musica Mundi
 
-# In[22]:
+# In[23]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Musica_Mundi_Ratings')
@@ -183,7 +191,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Old Grass Gnu Grass
 
-# In[23]:
+# In[24]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'OGGG_Ratings')
@@ -191,7 +199,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'O
 
 # ### The Present Edge
 
-# In[24]:
+# In[25]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Present_Edge_Ratings')
@@ -199,7 +207,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'P
 
 # ### Ragtime America
 
-# In[25]:
+# In[26]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Ragtime_America_Ratings')
@@ -207,7 +215,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Reggae Bloodlines
 
-# In[26]:
+# In[27]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Reggae_Bloodlines_Ratings')
@@ -215,7 +223,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Reggae Transfusions
 
-# In[27]:
+# In[28]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Reggae_Transfusions_Ratings')
@@ -223,7 +231,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Restless Mornings
 
-# In[28]:
+# In[29]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Restless_Mornings_Ratings')
@@ -231,7 +239,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Roots and Branches
 
-# In[29]:
+# In[30]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Roots_and_Branches_Ratings')
@@ -239,7 +247,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Roots of Jazz
 
-# In[30]:
+# In[31]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Roots_of_Jazz_Ratings')
@@ -247,7 +255,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Seolta Gael
 
-# In[31]:
+# In[32]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Seolta_Gael_Ratings')
@@ -255,7 +263,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### Sleepless Nights
 
-# In[32]:
+# In[33]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Sleepless_Nights_Ratings')
@@ -263,7 +271,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### Smash It Back
 
-# In[33]:
+# In[34]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Smash_It_Back_Ratings')
@@ -271,7 +279,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### SoundLab
 
-# In[34]:
+# In[35]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Soundlab_Ratings')
@@ -279,7 +287,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### Swing Shift
 
-# In[35]:
+# In[36]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Swing_Shift_Ratings')
@@ -287,7 +295,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### Terrasonic
 
-# In[36]:
+# In[37]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Terrasonic_Ratings')
@@ -295,7 +303,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### The Heavy Set
 
-# In[37]:
+# In[38]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'The_Heavy_Set_Ratings')
@@ -303,7 +311,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### The Opera Box
 
-# In[38]:
+# In[39]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'The_Opera_Box_Ratings')
@@ -311,7 +319,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### Under the Floorboards
 
-# In[39]:
+# In[40]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Under_the_Floorboards_Ratings')
@@ -321,7 +329,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'U
 
 # ### A Public Affairs
 
-# In[40]:
+# In[41]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A_Public_Affair_Ratings')
@@ -329,7 +337,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### Alan Watts
 
-# In[41]:
+# In[42]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Alan_Watts_Ratings')
@@ -337,7 +345,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### Alternative Radio
 
-# In[42]:
+# In[43]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Alternative_Radio_Ratings')
@@ -345,15 +353,15 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'A
 
 # ### BBC News Hour
 
-# In[43]:
+# In[44]:
 
 
-create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'BBC_New_Hour_Ratings')
+create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'BBC_News_Hour_Ratings')
 
 
 # ### BBC The Newsroom
 
-# In[44]:
+# In[45]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'BBC_The_Newsroom_Ratings')
@@ -361,7 +369,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'B
 
 # ### Between the Lines
 
-# In[45]:
+# In[46]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Between_the_Lines_Ratings')
@@ -369,7 +377,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'B
 
 # ### Bioneers
 
-# In[46]:
+# In[47]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Bioneers_Ratings')
@@ -377,7 +385,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'B
 
 # ### Black Talk
 
-# In[47]:
+# In[48]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Black_Talk_Ratings')
@@ -385,15 +393,15 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'B
 
 # ### Colorado Chinese Radio Network
 
-# In[48]:
+# In[49]:
 
 
-create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Colorado_Chineses_Radio_Network_Ratings')
+create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Col_Chinese_Radio_Network_Ratings')
 
 
 # ### Connections
 
-# In[49]:
+# In[50]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Connections_Ratings')
@@ -401,7 +409,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'C
 
 # ### Counterspin
 
-# In[50]:
+# In[51]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Counterspin_Ratings')
@@ -409,7 +417,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'C
 
 # ### Democracy Now
 
-# In[51]:
+# In[52]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Democracy_Now_Ratings')
@@ -417,7 +425,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'D
 
 # ### Economic Update
 
-# In[52]:
+# In[53]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Economic_Update_Ratings')
@@ -425,7 +433,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'E
 
 # ### Hemispheres
 
-# In[53]:
+# In[54]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Hemispheres_Ratings')
@@ -433,7 +441,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'H
 
 # ### How on Earth
 
-# In[54]:
+# In[55]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'How_on_Earth_Ratings')
@@ -441,7 +449,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'H
 
 # ### Indian Voices
 
-# In[55]:
+# In[56]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Indian_Voices_Ratings')
@@ -449,7 +457,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'I
 
 # ### It's the Economy
 
-# In[56]:
+# In[57]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Its_The_Economy_Ratings')
@@ -457,7 +465,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'I
 
 # ### Jim Hightower
 
-# In[57]:
+# In[58]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Jim_Hightower_Ratings')
@@ -465,7 +473,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'J
 
 # ### La Lucha Sigue
 
-# In[58]:
+# In[59]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'La_Lucha_Sigue_Ratings')
@@ -473,7 +481,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Labor Exchange
 
-# In[59]:
+# In[60]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Labor_Exchange_Ratings')
@@ -481,7 +489,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Linea Abierta
 
-# In[60]:
+# In[61]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Linea_Abierta_Ratings')
@@ -489,7 +497,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Living Dialogues
 
-# In[61]:
+# In[62]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Living_Dialogues_Ratings')
@@ -497,7 +505,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Local PM Headlines Spanish
 
-# In[62]:
+# In[63]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Local_PM_Headlines_Spanish_Ratings')
@@ -505,7 +513,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Making Contact
 
-# In[63]:
+# In[64]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Making_Contact_Ratings')
@@ -513,7 +521,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Metro
 
-# In[64]:
+# In[65]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Metro_Ratings')
@@ -521,7 +529,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Metro Arts
 
-# In[65]:
+# In[66]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Metro_Arts_Ratings')
@@ -529,7 +537,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Morning Magazine
 
-# In[66]:
+# In[67]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Morning_Magazine_Ratings')
@@ -537,7 +545,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'M
 
 # ### Naturally
 
-# In[67]:
+# In[68]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Naturally_Ratings')
@@ -545,7 +553,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'N
 
 # ### New Dimensions
 
-# In[68]:
+# In[69]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'New_Dimensions_Ratings')
@@ -553,7 +561,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'N
 
 # ### Outsources
 
-# In[69]:
+# In[70]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Outsources_Ratings')
@@ -561,7 +569,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'O
 
 # ### Pasa La Voz
 
-# In[70]:
+# In[71]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Pasa_La_Voz_Ratings')
@@ -569,7 +577,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'P
 
 # ### Peace Talks
 
-# In[71]:
+# In[72]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Peace_Talks_Ratings')
@@ -577,7 +585,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'P
 
 # ### Project Censored
 
-# In[72]:
+# In[73]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Project_Censored_Ratings')
@@ -585,7 +593,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'P
 
 # ### Rising Up with Sonali
 
-# In[73]:
+# In[74]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Rising_Up_with_Sonali_Ratings')
@@ -593,7 +601,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Sprouts
 
-# In[74]:
+# In[75]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Sprouts_Ratings')
@@ -601,7 +609,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### StoryTellers of Color
 
-# In[75]:
+# In[76]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'StoryTellers_of_Color_Ratings')
@@ -609,7 +617,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### Laura Flanders
 
-# In[76]:
+# In[77]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Laura_Flanders_Ratings')
@@ -617,7 +625,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'L
 
 # ### Ralph Nader
 
-# In[77]:
+# In[78]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Ralph_Nader_Ratings')
@@ -625,7 +633,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'R
 
 # ### Shortwave Report
 
-# In[78]:
+# In[79]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Shortwave_Report_Ratings')
@@ -633,7 +641,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'S
 
 # ### The World
 
-# In[79]:
+# In[80]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'The_World_Ratings')
@@ -641,7 +649,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### TRENDS
 
-# In[80]:
+# In[81]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'TRENDS_Ratings')
@@ -649,7 +657,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### Tributaries
 
-# In[81]:
+# In[82]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Tributaries_Ratings')
@@ -657,7 +665,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### TUC Radio
 
-# In[82]:
+# In[83]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'TUC_Radio_Ratings')
@@ -665,7 +673,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'T
 
 # ### WINGS
 
-# In[83]:
+# In[84]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'WINGS_Ratings')
@@ -673,7 +681,7 @@ create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'W
 
 # ### Weed Between
 
-# In[84]:
+# In[85]:
 
 
 create_hist_and_stats(df, filter_col, filter_col_val, filter_col_val_display, 'Weed_between_Ratings')
